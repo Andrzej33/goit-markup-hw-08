@@ -93,7 +93,7 @@ img {
 }
 @media screen and (min-with: 480px) {
   .container {
-    max-width: 480x;
+    max-width: 480px;
   }
 }
 
@@ -454,8 +454,8 @@ position: absolute;
 
 .section.hero {
   background-color: #c4c4c4;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -463,7 +463,6 @@ position: absolute;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  height: 400px;
 }
 
 .hero__title {
