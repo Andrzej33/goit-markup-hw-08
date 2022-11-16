@@ -93,12 +93,7 @@ img {
 }
 @media screen and (min-with: 480px) {
   .container {
-    max-width: 480px;
-  }
-}
-@media screen and (min-with: 768px) {
-  .container {
-    max-width: 768px;
+    width: 480px;
   }
 }
 
@@ -468,6 +463,11 @@ position: absolute;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+}
+@media screen and (min-with: 480px) {
+  .section.hero {
+    with: 480px;
+  }
 }
 
 .hero__title {
