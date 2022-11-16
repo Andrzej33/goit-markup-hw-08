@@ -2,10 +2,16 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-}
+   }
 
 .card__list__item{
     width: 100%;
+    @media screen and (min-width: 768px) {
+     width: calc((100% - 30px) / 2);
+        }
+      @media screen and (min-width: 1200px) {
+       width: calc((100% - 90px) / 4);
+         }
 }
 
 // .card__list__item:not(:last-child) {
@@ -33,7 +39,11 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    text-align: center;
     color: var(--primary-title-color);
+    @media screen and (min-width: 768px) {
+            text-align: unset;
+        }
 }
 
 .card__list__text {
@@ -42,5 +52,5 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     margin-top: 10px;
-    width: 270px;
+
 }
