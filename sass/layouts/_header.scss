@@ -6,10 +6,12 @@
 
 .header__container {
     display: flex;
+    justify-content: space-between;
 }
 
 .navigation {
     display: flex;
+    
 }
 
 
@@ -18,7 +20,7 @@
     display: inline-block;
     padding-top: 24px;
     padding-bottom: 25px;
-    
+
 }
 
 
@@ -34,7 +36,8 @@
 
 .site-nav,
 .contacts {
-    display: flex;
+    display: none;
+    // display: flex;
     gap: 50px;
 }
 
@@ -63,7 +66,8 @@
     color: var(--accent-color);
     position: relative;
     &::after {
-            display: inline-block;
+            // display: inline-block;
+            display: none;
             content: "";
             width: 100%;
             height: 4px;
@@ -89,7 +93,8 @@
 
 .contacts__mail,
 .contacts__tel {
-    display: flex;
+    // display: flex;
+    display: none;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -107,6 +112,7 @@
 .contacts__smartphone {
     margin-right: 10px;
     fill: currentColor;
+    display: none;
 }
 
 // .header-contacts a:hover,
@@ -114,3 +120,12 @@
 //     color: var(--accent-color);
 
 // }
+
+.menu-unfold{
+    background-color: transparent;
+    
+}
+
+.unfold__icon{
+    // background-color: transparent;
+}
