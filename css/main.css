@@ -147,7 +147,7 @@ img {
 
 .mobile-menu {
   width: 100vw;
-  height: 100vw;
+  height: 100vh;
   top: 0;
   position: fixed;
   z-index: 1;
@@ -160,9 +160,6 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow: auto;
-  position: fixed;
-  top: 0;
 }
 
 .menu-close {
@@ -193,7 +190,7 @@ img {
 }
 
 .mobile-contacts {
-  margin-bottom: 64px;
+  margin-bottom: 20px;
 }
 
 .mobile-contacts__tel {

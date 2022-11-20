@@ -13,6 +13,7 @@
 
   function toggleMenu() {
     refs.menu.classList.toggle("is-hidden");
+    refs.body.classList.toggle("no-scroll");
     }
     
     function removeMenu() {
