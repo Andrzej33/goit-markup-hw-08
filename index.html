@@ -58,15 +58,19 @@
             >
           </li>
         </ul>
-      <button type="button" class="menu-unfold">
+      <button type="button" class="menu-unfold" data-menu-open>
         <svg class="unfold__icon" width="40" height="40">
           <use href="./img/symbol-defs.svg#icon-unfold"></use>
         </svg>
       </button>
       </div>
-      <div class="mobile-menu">
+      <div class="mobile-menu is-hidden" data-menu>
         <div class="container">
-          <button type="button" class="menu-close">Х</button>
+          <button type="button" class="menu-close" data-menu-close>
+            <svg class="modal-close" width="40" height="40">
+              <use href="./img/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
           <ul class="mobile-nav">
             <li class="mobile-nav__item">
               <a class="mobile-nav__link link current" href="./index.html">Студія</a>
@@ -79,34 +83,36 @@
             </li>
           </ul>
           </nav>
-          <ul class="mobile-contacts">
-            <li>
-              <a class="mobile-contacts__tel link" href="tel:+380961111111">
-                +38 096 111 11 11</a>
-            </li>
-            <li>
-              <a class="mobile-contacts__mail link" href="mailto:info@devstudio.com">
-                info@devstudio.com</a>
-            </li>
+          <div class="mobile-menu-bottom">
+            <ul class="mobile-contacts">
+              <li>
+                <a class="mobile-contacts__tel link" href="tel:+380961111111">
+                  +38 096 111 11 11</a>
+              </li>
+              <li>
+                <a class="mobile-contacts__mail link" href="mailto:info@devstudio.com">
+                  info@devstudio.com</a>
+              </li>
             </ul>
-          <ul class=" mobile-social ">
-            <li>
-              <a class="mobile-social__link link" href="#" target="_blank" rel="noopener noreferrer nofollow">
-                Instagram</a>
-            </li>
-            <li>
-              <a class="mobile-social__link link" href="#" target="_blank" rel="noopener noreferrer nofollow">
-                Twitter</a>
-            </li>
-            <li>
-              <a class="mobile-social__link link" href="#" target="_blank" rel="noopener noreferrer nofollow">
-                Facebook</a>
-            </li>
-            <li>
-              <a class="mobile-social__link link" href="#" target="_blank" rel="noopener noreferrer nofollow">
-                LinkedIn</a>
-            </li>
-          </ul>
+            <ul class=" mobile-social ">
+              <li>
+                <a class="mobile-social__link link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                  Instagram</a>
+              </li>
+              <li>
+                <a class="mobile-social__link link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                  Twitter</a>
+              </li>
+              <li>
+                <a class="mobile-social__link link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                  Facebook</a>
+              </li>
+              <li>
+                <a class="mobile-social__link link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                  LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -454,7 +460,7 @@
         </div>
       </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer-container">
         <div class="main-part">
           <a class="logo link logo--margin-footer" lang="en" href="./index.html"
@@ -535,7 +541,7 @@
         </div>
       </div>
     </footer> -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button data-modal-close type="button" class="modal-bt">
           <svg class="modal-close" width="18" height="18">
@@ -606,7 +612,8 @@
           <button class="btn hero-bt-modal" type="submit">Відправити</button>
         </form>
       </div>
-    </div> -->
-    <!-- <script src="./js/modal.js"></script> -->
+    </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
