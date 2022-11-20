@@ -75,10 +75,11 @@
     display: flex;
    justify-content: center;
    gap: 10px;
+   flex-wrap: wrap;
 }
 
 .mobile-social-item{
-    width: calc((100% - 30px) / 4);
+    // width: calc((100% - 30px) / 4);
     padding-left: 10px;
 }
 
