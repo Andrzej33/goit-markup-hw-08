@@ -160,6 +160,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: auto;
 }
 
 .menu-close {
@@ -175,7 +176,6 @@ img {
 
 .mobile-nav__item:not(:last-child) {
   margin-bottom: 12px;
-  white-space: nowrap;
 }
 
 .mobile-nav__link {
@@ -189,12 +189,17 @@ img {
   color: var(--accent-color);
 }
 
+.mobile-menu-bottom {
+  display: inline-block;
+  width: 100%;
+}
+
 .mobile-contacts {
   margin-bottom: 20px;
 }
 
 .mobile-contacts__tel {
-  display: block;
+  display: inline-block;
   font-weight: 500;
   font-size: 34px;
   line-height: 1.18;
@@ -213,7 +218,12 @@ img {
 
 .mobile-social {
   display: flex;
+  justify-content: center;
   gap: 10px;
+}
+
+.mobile-social-item {
+  width: calc((100% - 30px) / 4);
 }
 
 .mobile-social__link {
@@ -755,7 +765,6 @@ position: absolute;
   display: flex;
   justify-content: center;
   gap: 10px;
-  margin-top: 16px;
   align-items: center;
 }
 
@@ -794,6 +803,7 @@ position: absolute;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
 }
 
 .clients__list {
@@ -843,13 +853,24 @@ position: absolute;
   padding-bottom: 60px;
 }
 
-.container.footer-container {
+.main-part {
+  align-items: center;
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+}
+
+.address {
+  margin-bottom: 60px;
+}
+
+.adress-list {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 /* .footer-logo {
@@ -885,6 +906,11 @@ position: absolute;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+  text-align: center;
+}
+
+.social__text {
+  margin-bottom: 20px;
 }
 
 .social__link.socials {
@@ -896,18 +922,13 @@ position: absolute;
 }
 
 .footer__social {
-  margin-left: 70px;
   display: flex;
   flex-direction: column;
 }
 
 .subscription {
   margin-left: auto;
-}
-
-.footer-form {
-  display: flex;
-  align-items: center;
+  margin-top: 60px;
 }
 
 .subs-text {
@@ -916,7 +937,6 @@ position: absolute;
 
 .footer-label {
   position: relative;
-  margin-right: 12px;
 }
 
 .footer-mail-label {
@@ -937,7 +957,7 @@ position: absolute;
 }
 
 .footer-input {
-  width: 358px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -946,12 +966,13 @@ position: absolute;
   color: #ffffff;
   outline: transparent;
   padding-left: 16px;
+  margin-bottom: 20px;
 }
 
 .subs-bt {
   display: flex;
-  align-items: center;
   gap: 10px;
+  padding-left: 31px;
 }
 
 .send-icon {
