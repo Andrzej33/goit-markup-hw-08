@@ -73,18 +73,20 @@
 
 .mobile-social{
     display: flex;
-   justify-content: center;
+//    justify-content: center;
    gap: 10px;
    flex-wrap: wrap;
+@media screen and (max-width: 400px) {
+        justify-content: center;
+    }
 }
 
-.mobile-social-item{
-    // width: calc((100% - 30px) / 4);
-    padding-left: 10px;
-}
+
 
 .mobile-social-item:not(:first-child) {
 border-left: 1px solid rgba(33, 33, 33, 0.2);
+padding-left: 10px;
+
 }
 
 

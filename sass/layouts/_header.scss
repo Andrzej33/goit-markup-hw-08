@@ -42,10 +42,26 @@
     display: none;
     // display: flex;
     gap: 50px;
+@include tablet {
+        display: flex;
+    }
+}
+
+.site-nav{
+    margin: 0 auto;
 }
 
 .header__contacts {
-    margin-left: auto;
+    // margin-left: auto;
+    @include tablet {
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+    }
+        @include desktop {
+            flex-direction: row;
+            align-items: center;
+        }
 }
 
 // .header-link:hover,
@@ -79,6 +95,9 @@
             position: absolute;
             bottom: -1px;
             right: 0;
+    @include tablet {
+        display: inline-block;
+    }
         }
 }
 
@@ -96,19 +115,27 @@
 
 .contacts__mail,
 .contacts__tel {
-    // display: flex;
+    display: flex;
     display: none;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
     align-items: center;
     &:hover,
         &:focus {
             color: var(--accent-color);
-    
-        }
+            }
+  @media screen and (min-width: 768px) {
+     display: flex;
+     padding: 0px;
+          }
+   @include desktop {
+    font-size: 14px;
+    line-height: 1.14;
+   
+   }                     
 }
 
 .contacts__envelop,
@@ -116,6 +143,9 @@
     margin-right: 10px;
     fill: currentColor;
     display: none;
+    @include tablet {
+        display: block;
+    }
 }
 
 // .header-contacts a:hover,
@@ -126,9 +156,8 @@
 
 .menu-unfold{
     background-color: transparent;
-    
+@include tablet {
+        display: none;
+    }
 }
 
-.unfold__icon{
-    // background-color: transparent;
-}
