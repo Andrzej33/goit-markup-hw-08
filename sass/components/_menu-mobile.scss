@@ -61,6 +61,9 @@
         color: var(--accent-color);
         margin-bottom: 32px;
     //    max-width: 100%;
+    @media screen and (max-width: 340px) {
+        font-size: 28px;
+    }
 }
 
 .mobile-contacts__mail{

@@ -1,6 +1,10 @@
 .work__section {
     padding-top: 0px;
     padding-bottom: 94px;
+    display: none;
+    @include desktop {
+        display: unset;
+    }
 }
 
 /* .work-item::not(:last-child) {
