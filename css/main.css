@@ -617,6 +617,7 @@ position: absolute;
   .header__contacts {
     flex-direction: row;
     align-items: center;
+    gap: 30px;
   }
 }
 
@@ -693,6 +694,20 @@ position: absolute;
   .contacts__envelop,
 .contacts__smartphone {
     display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__envelop {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__smartphone {
+    width: 10px;
+    height: 16px;
   }
 }
 

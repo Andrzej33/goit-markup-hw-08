@@ -66,6 +66,7 @@
         @include desktop {
             flex-direction: row;
             align-items: center;
+            gap: 30px;
         }
 }
 
@@ -150,6 +151,20 @@
     display: none;
     @include tablet {
         display: block;
+    }
+}
+
+.contacts__envelop{
+    @include desktop {
+        width: 16px;
+        height: 12px;
+    }
+}
+
+.contacts__smartphone{
+    @include desktop {
+        width: 10px;
+        height: 16px;
     }
 }
 
