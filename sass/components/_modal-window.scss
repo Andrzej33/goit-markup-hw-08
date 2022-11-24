@@ -20,13 +20,18 @@
     transform: translate(-50%, -50%) scale(1);
     
     width: 90%;
-    max-height: 639px;
+    max-height: 609px;
     background-color: var(--primary-bkg-color);
     padding: 40px;
+    // margin-top: 94px;
+    // margin-bottom: 94px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transition: transform 700ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    @media screen and (max-width: 334px) {
+            padding-top: 20px;
+        }
     @media screen and (min-width:500px){
         width: 450px;
     }
@@ -184,6 +189,9 @@
    
     letter-spacing: 0.03em;
     justify-content: center;
+    @media screen and (max-width: 334px) {
+      margin-bottom: 10px;  
+    }
     @include desktop {
     font-size: 14px;
     line-height: 1.71;

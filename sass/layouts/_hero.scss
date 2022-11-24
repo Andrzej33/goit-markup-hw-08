@@ -9,7 +9,7 @@
     background-position: center;
     margin-left: auto;
     margin-right: auto;
-    // max-width: 1600px;
+    margin-top: 60px;
     max-width: 100%;
     height: 400px;
     @include retina{
@@ -18,6 +18,7 @@
         }   
 
     @media screen and (min-width: 768px) {
+        margin-top: 0px;
     background-image: var(--gradient),
     url('../img/hero-tab.jpg');
     @include retina {
@@ -27,6 +28,7 @@
     }
     
      @media screen and (min-width: 1200px) {
+     max-width: 1600px;
      height: 600px;
     padding-top: 200px;
         padding-bottom: 200px;
