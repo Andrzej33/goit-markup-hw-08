@@ -19,7 +19,7 @@
     @extend %trans-center;
     transform: translate(-50%, -50%) scale(1);
     
-    width: 90%;
+    width: 95%;
     max-height: 609px;
     background-color: var(--primary-bkg-color);
     padding: 40px;
@@ -32,7 +32,7 @@
     @media screen and (max-width: 334px) {
             padding-top: 20px;
         }
-    @media screen and (min-width:500px){
+    @media screen and (min-width:480px){
         width: 450px;
     }
     @include desktop {
@@ -41,9 +41,7 @@
     }
 }
 
-.form{
-    
-}
+
 
 .modal-bt {
     background-color: inherit;
@@ -206,18 +204,38 @@ position: absolute;
 } */
 
 .label-checkbox {
-   
-    // align-items: center;
-   position: relative;
-   padding-left: 27px; 
-@media screen and (min-width: 485px) {
-    display: flex;
-     gap: 7px;
-     padding: 0;
-    align-items: baseline;
-     }
+// display: inline-flex;
+//    position: relative;
+//    padding-left: 24px;
+//    text-align: center;
     
+    // @media screen and (min-width: 287px) {
+    //     // padding-left: 33px;
+    //     padding-right: 5px;
+    // }
+       
+            padding-left: 15px;
+            text-align: left;
+    
+       @media screen and (min-width:340px) {
+           padding-left: 25px;
+               }
+        @media screen and (min-width:440px) {
+            padding-left: 35px;
+        }
+
+@media screen and (min-width: 480px) {
+    display: flex;
+     gap: 8px;
+     padding: 0;
+    // align-items: baseline;
+    justify-content: center;
+     }
+     @include desktop {
+        align-items: baseline;
+     }
 }
+
 
 // .checkbox:checked + .icon-confirm {
 //     background-color: var(--accent-color);
@@ -232,9 +250,9 @@ position: absolute;
 
 .icon-confirm {
     // display: flex;
-    position: absolute;
-    left: 1px;
-    bottom: 14px;
+    // position: absolute;
+    // left: 1px;
+    // bottom: 14px;
     display: inline-flex;
     width: 16px;
     height: 15px;
@@ -252,12 +270,10 @@ position: absolute;
                 .checkbox:focus + & {
                     border-color: var(--accent-color);
                 }
-   @media screen and (max-width: 308px) {
-    bottom: 28px;
-   }
-   @media screen and (min-width: 485px) {
-    position: unset;
-   }
+          @media screen and (max-width: 479px) {
+            margin-right: 6px;
+          }
+//    
 }
 
 .contract-modal {
@@ -267,6 +283,12 @@ position: absolute;
     border-bottom: 100% solid #2196f3;
     color: #2196f3;
     position: relative;
+    @media screen and (max-width:480px) {
+        display: inline-block;
+            }
+    @media screen and (max-width:456px) {
+            text-align: center;
+        }
     &::after {
             display: inline-block;
             content: "";

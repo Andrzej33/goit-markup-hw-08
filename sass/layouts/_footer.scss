@@ -17,9 +17,11 @@
     @include desktop {
      display: flex;
     align-items: baseline;
+    
     padding-left: 15px;
         padding-right: 15px;
-        justify-content: space-between;
+    // padding: 0;
+        // justify-content: space-between;
     }
 }
 
@@ -29,12 +31,18 @@
         align-items: baseline;
         justify-content: space-between;
     }
+    @include desktop {
+        justify-content: unset;
+    }
 }
 
 .main-part{
     align-items: center;
     display: flex;
     flex-direction: column;
+    // @include tablet {
+    //     margin-right: 165px;
+    // }
     @include desktop {
         margin-right: 70px;
     }
@@ -42,7 +50,7 @@
 
 .address{
     margin-bottom: 60px;
-    @include desktop {
+    @include tablet {
         margin: 0;
     }
 }
@@ -116,7 +124,10 @@ margin-bottom: 9px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #ffffff;
-    text-align: center;
+    @media screen and (max-width:1199px) {
+    text-align: center; 
+    }
+    
 }
 
 .social__text{
@@ -142,17 +153,23 @@ margin-bottom: 9px;
 
     display: flex;
     flex-direction: column;
+    @include desktop {
+        margin-right: 93px;
+    }
 }
 
 .subscription {
     // margin-left: auto;
+    // width: 80%;
+    margin: 0 auto;
     margin-top: 60px;
     @include tablet {
         width: 450px;
-        margin: 0 auto;
+         
     }
     @include desktop {
         margin: 0;
+        width: unset;
     }
 }
 

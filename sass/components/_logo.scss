@@ -16,6 +16,15 @@
 
 .logo--margin-header{
     // margin-right: 93px;
+    // @media screen and (max-width:768px) {
+    //     margin: 0;
+    // }
+    @include tablet {
+        margin-right: 87px;
+    }
+    @include desktop {
+        margin-right: 93px;
+    }
 }
 
 .logo--margin-footer{

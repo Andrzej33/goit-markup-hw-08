@@ -13,9 +13,10 @@
 
 .header__container {
     display: flex;
-    justify-content: space-between;
-   
-}
+    @media screen and (max-width:768px) {
+            justify-content: space-between;
+        }
+   }
 
 .navigation {
     display: flex;
@@ -57,16 +58,18 @@
 }
 
 .header__contacts {
-    // margin-left: auto;
+    
     @include tablet {
         flex-direction: column;
         gap: 10px;
         justify-content: center;
+        margin-left: auto;
     }
         @include desktop {
             flex-direction: row;
             align-items: center;
-            gap: 30px;
+            // gap: 30px;
+            gap: 50px;
         }
 }
 
