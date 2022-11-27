@@ -1,5 +1,5 @@
 .btn{
-    min-width: 216px;
+    min-width: 200px;
     height: 50px;
     font-family: inherit;
     font-weight: 700;
@@ -15,9 +15,7 @@
     border-radius: 4px;
     cursor: pointer;
     margin: 0 auto;
-    margin-top: 30px;
-    // padding: 10px 32px;
-    transition: background-color var(--transition-duration) var(--transition-cub);
+       transition: background-color var(--transition-duration) var(--transition-cub);
        &:hover,
         &:focus {
             background-color: var(--bt-bkg--hover-color);

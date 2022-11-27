@@ -11,15 +11,16 @@
     // padding-right: 15px;
    
     @include tablet {
-        padding-left: 76px;
-        padding-right: 89px;
+        // padding-left: 76px;
+        // padding-right: 89px;
     }
     @include desktop {
      display: flex;
     align-items: baseline;
+    justify-content: space-between;
     
-    padding-left: 15px;
-        padding-right: 15px;
+    // padding-left: 15px;
+    //     padding-right: 15px;
     // padding: 0;
         // justify-content: space-between;
     }
@@ -29,7 +30,7 @@
     @include tablet {
         display: flex;
         align-items: baseline;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     @include desktop {
         justify-content: unset;
@@ -237,16 +238,11 @@ margin-right: 12px;
 
 .subs-bt {
     display: flex;
-    // align-items: center;
     gap: 10px;
-    // align-content: center;
     padding-left: 31px;
 }
 
-// .subs-bt:hover,
-// .subs-bt:focus {
-//     background-color: var(--bt-bkg--hover-color);
-// }
+
 
 .send-icon {
     fill: currentColor;
