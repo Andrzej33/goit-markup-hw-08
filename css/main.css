@@ -610,6 +610,7 @@ position: absolute;
   background-color: var(--primary-bkg-color);
   border-bottom: 1px solid #ececec;
   position: fixed;
+  z-index: 1;
   width: 100%;
   margin-top: -60px;
 }
@@ -1287,7 +1288,6 @@ main {
 
 .portfolio.section {
   margin-top: 60px;
-  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .portfolio.section {
@@ -1320,8 +1320,18 @@ main {
 
 .filter-list {
   display: flex;
-  gap: 8px;
-  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 350px;
+  row-gap: 15px;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  justify-content: flex-start;
+}
+@media screen and (min-width: 768px) {
+  .filter-list {
+    max-width: unset;
+    justify-content: center;
+  }
 }
 
 .project-list {
@@ -1343,6 +1353,7 @@ main {
 }
 
 .project-card {
+  flex-grow: 1;
   padding: 20px 24px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
@@ -1350,8 +1361,10 @@ main {
 }
 
 .project-link {
-  display: block;
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
+  height: 100%;
   transition: box-shadow var(--transition-duration) var(--transition-cub);
 }
 .project-link:hover {

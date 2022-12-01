@@ -45,8 +45,16 @@ main {
 
 .filter-list {
     display: flex;
-    gap: 8px;
+    flex-wrap: wrap;
+    max-width: 350px;
+    row-gap: 15px;
+    column-gap: 8px;
+    justify-content: flex-start;
+    @include tablet {
+        max-width: unset;
     justify-content: center;
+    }
+    
 }
 
 .project-list {
@@ -70,6 +78,7 @@ main {
 }
 
 .project-card {
+    flex-grow: 1;
     padding: 20px 24px;
     border-left: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
@@ -77,11 +86,11 @@ main {
 }
 
 .project-link {
-    display: block;
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
-    // width: 100%;
-    // flex-basis: calc((100% - 60px) / 3);
-    transition: box-shadow var(--transition-duration) var(--transition-cub);
+    height: 100%;
+       transition: box-shadow var(--transition-duration) var(--transition-cub);
     &:hover {
             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
                 1px 4px 6px rgba(0, 0, 0, 0.16);

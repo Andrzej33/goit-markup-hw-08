@@ -3,6 +3,7 @@
     background-color: var(--primary-bkg-color);
     border-bottom: 1px solid #ececec;
     position: fixed;
+    z-index: 1;
     width: 100%;
    margin-top: -60px;
     @include tablet {
